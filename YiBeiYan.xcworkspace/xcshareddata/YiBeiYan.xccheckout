@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>32E3DEEF-9E28-497F-8EE3-C7E8DFFBEA60</string>
+	<key>IDESourceControlProjectName</key>
+	<string>YiBeiYan</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>3143E6E9-5FA5-4E84-AACF-F6ABBE2FD45D</key>
+		<string>http://git.m2lan.com/guang/yibeiyan.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>YiBeiYan.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>3143E6E9-5FA5-4E84-AACF-F6ABBE2FD45D</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>http://git.m2lan.com/guang/yibeiyan.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>3143E6E9-5FA5-4E84-AACF-F6ABBE2FD45D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>3143E6E9-5FA5-4E84-AACF-F6ABBE2FD45D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>yibeiyan</string>
+		</dict>
+	</array>
+</dict>
+</plist>
