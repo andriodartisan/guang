@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		58045E0D19E517CD00BC6665 /* YBYOrderListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58045E0C19E517CD00BC6665 /* YBYOrderListTableViewController.m */; };
+		58045E1019E5196500BC6665 /* YBYOrderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 58045E0F19E5196500BC6665 /* YBYOrderTableViewCell.m */; };
+		58045E1319E5306100BC6665 /* YBYGoldTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 58045E1219E5306100BC6665 /* YBYGoldTableViewCell.m */; };
+		58045E1619E530A800BC6665 /* YBYGoldTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58045E1519E530A800BC6665 /* YBYGoldTableViewController.m */; };
+		58045E1919E540B700BC6665 /* YBYSearchOrderTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58045E1819E540B700BC6665 /* YBYSearchOrderTableViewController.m */; };
+		58045E1C19E542A900BC6665 /* YBYContainerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58045E1B19E542A900BC6665 /* YBYContainerController.m */; };
 		58607D6E19D5B14700AEE630 /* YBYLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58607D6D19D5B14700AEE630 /* YBYLoginViewController.m */; };
 		58607D7119D5B15D00AEE630 /* YBYRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58607D7019D5B15D00AEE630 /* YBYRegisterViewController.m */; };
 		587CFEE4199F0447005DB627 /* StrikeThroughLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 587CFEE3199F0447005DB627 /* StrikeThroughLabel.m */; };
@@ -16,9 +22,18 @@
 		58849DA219D6C5370004F77C /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 58849DA119D6C5370004F77C /* UIImage+Resize.m */; };
 		58849DA519D6C5DD0004F77C /* AFHTTPSessionManager+UploadImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 58849DA419D6C5DD0004F77C /* AFHTTPSessionManager+UploadImage.m */; };
 		58849DA819D700E80004F77C /* GoodsApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 58849DA719D700E80004F77C /* GoodsApi.m */; };
+		58890EB619E25A27001314E6 /* mybackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 58890EB519E25A27001314E6 /* mybackground.jpg */; };
+		58890EB919E26DCE001314E6 /* defaultavator.png in Resources */ = {isa = PBXBuildFile; fileRef = 58890EB719E26DCE001314E6 /* defaultavator.png */; };
+		58890EBA19E26DCE001314E6 /* defaultavator@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 58890EB819E26DCE001314E6 /* defaultavator@2x.png */; };
+		58890EBC19E275CF001314E6 /* card_arrows.png in Resources */ = {isa = PBXBuildFile; fileRef = 58890EBB19E275CF001314E6 /* card_arrows.png */; };
+		58890EC019E28FCC001314E6 /* PersonalDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58890EBF19E28FCC001314E6 /* PersonalDataViewController.m */; };
+		58890EC619E2DA50001314E6 /* Face.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58890EC319E2DA50001314E6 /* Face.xib */; };
+		58890EC719E2DA50001314E6 /* FaceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 58890EC519E2DA50001314E6 /* FaceCell.m */; };
+		58890EC919E2E07E001314E6 /* personalData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 58890EC819E2E07E001314E6 /* personalData.plist */; };
 		5896B38A199E415B00C7C325 /* left_demo_pic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5896B388199E415B00C7C325 /* left_demo_pic.jpg */; };
 		5896B38B199E415B00C7C325 /* right_demo_pic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5896B389199E415B00C7C325 /* right_demo_pic.jpg */; };
 		5896B38D199E45F900C7C325 /* recommend_demo_pic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5896B38C199E45F900C7C325 /* recommend_demo_pic.jpg */; };
+		58AACE9719E38CAC001E0397 /* setting.plist in Resources */ = {isa = PBXBuildFile; fileRef = 58AACE9619E38CAC001E0397 /* setting.plist */; };
 		58EDEDFB19BA03790062CA79 /* Icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 58EDEDF519BA03790062CA79 /* Icon-40.png */; };
 		58EDEDFC19BA03790062CA79 /* Icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 58EDEDF619BA03790062CA79 /* Icon-40@2x.png */; };
 		58EDEDFD19BA03790062CA79 /* Icon-60.png in Resources */ = {isa = PBXBuildFile; fileRef = 58EDEDF719BA03790062CA79 /* Icon-60.png */; };
@@ -332,6 +347,18 @@
 
 /* Begin PBXFileReference section */
 		1DF34E262FE4421AB51F4692 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		58045E0B19E517CD00BC6665 /* YBYOrderListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBYOrderListTableViewController.h; sourceTree = "<group>"; };
+		58045E0C19E517CD00BC6665 /* YBYOrderListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBYOrderListTableViewController.m; sourceTree = "<group>"; };
+		58045E0E19E5196500BC6665 /* YBYOrderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBYOrderTableViewCell.h; sourceTree = "<group>"; };
+		58045E0F19E5196500BC6665 /* YBYOrderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBYOrderTableViewCell.m; sourceTree = "<group>"; };
+		58045E1119E5306100BC6665 /* YBYGoldTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBYGoldTableViewCell.h; sourceTree = "<group>"; };
+		58045E1219E5306100BC6665 /* YBYGoldTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBYGoldTableViewCell.m; sourceTree = "<group>"; };
+		58045E1419E530A800BC6665 /* YBYGoldTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBYGoldTableViewController.h; sourceTree = "<group>"; };
+		58045E1519E530A800BC6665 /* YBYGoldTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBYGoldTableViewController.m; sourceTree = "<group>"; };
+		58045E1719E540B700BC6665 /* YBYSearchOrderTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBYSearchOrderTableViewController.h; sourceTree = "<group>"; };
+		58045E1819E540B700BC6665 /* YBYSearchOrderTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBYSearchOrderTableViewController.m; sourceTree = "<group>"; };
+		58045E1A19E542A900BC6665 /* YBYContainerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBYContainerController.h; sourceTree = "<group>"; };
+		58045E1B19E542A900BC6665 /* YBYContainerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBYContainerController.m; sourceTree = "<group>"; };
 		58607D6919D5B05F00AEE630 /* YBYConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBYConfig.h; sourceTree = "<group>"; };
 		58607D6C19D5B14700AEE630 /* YBYLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBYLoginViewController.h; sourceTree = "<group>"; };
 		58607D6D19D5B14700AEE630 /* YBYLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBYLoginViewController.m; sourceTree = "<group>"; };
@@ -352,9 +379,20 @@
 		58849DA419D6C5DD0004F77C /* AFHTTPSessionManager+UploadImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AFHTTPSessionManager+UploadImage.m"; sourceTree = "<group>"; };
 		58849DA619D700E80004F77C /* GoodsApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodsApi.h; sourceTree = "<group>"; };
 		58849DA719D700E80004F77C /* GoodsApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodsApi.m; sourceTree = "<group>"; };
+		58890EB519E25A27001314E6 /* mybackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mybackground.jpg; sourceTree = "<group>"; };
+		58890EB719E26DCE001314E6 /* defaultavator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defaultavator.png; sourceTree = "<group>"; };
+		58890EB819E26DCE001314E6 /* defaultavator@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "defaultavator@2x.png"; sourceTree = "<group>"; };
+		58890EBB19E275CF001314E6 /* card_arrows.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = card_arrows.png; sourceTree = "<group>"; };
+		58890EBE19E28FCC001314E6 /* PersonalDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalDataViewController.h; sourceTree = "<group>"; };
+		58890EBF19E28FCC001314E6 /* PersonalDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalDataViewController.m; sourceTree = "<group>"; };
+		58890EC319E2DA50001314E6 /* Face.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Face.xib; sourceTree = "<group>"; };
+		58890EC419E2DA50001314E6 /* FaceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceCell.h; sourceTree = "<group>"; };
+		58890EC519E2DA50001314E6 /* FaceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceCell.m; sourceTree = "<group>"; };
+		58890EC819E2E07E001314E6 /* personalData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = personalData.plist; path = Data/personalData.plist; sourceTree = "<group>"; };
 		5896B388199E415B00C7C325 /* left_demo_pic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = left_demo_pic.jpg; sourceTree = "<group>"; };
 		5896B389199E415B00C7C325 /* right_demo_pic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = right_demo_pic.jpg; sourceTree = "<group>"; };
 		5896B38C199E45F900C7C325 /* recommend_demo_pic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = recommend_demo_pic.jpg; sourceTree = "<group>"; };
+		58AACE9619E38CAC001E0397 /* setting.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = setting.plist; path = Data/setting.plist; sourceTree = "<group>"; };
 		58EDEDF519BA03790062CA79 /* Icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-40.png"; path = "YiBeiYan/Icon-40.png"; sourceTree = SOURCE_ROOT; };
 		58EDEDF619BA03790062CA79 /* Icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-40@2x.png"; path = "YiBeiYan/Icon-40@2x.png"; sourceTree = SOURCE_ROOT; };
 		58EDEDF719BA03790062CA79 /* Icon-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-60.png"; path = "YiBeiYan/Icon-60.png"; sourceTree = SOURCE_ROOT; };
@@ -664,6 +702,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		58045E0A19E517CD00BC6665 /* order */ = {
+			isa = PBXGroup;
+			children = (
+				58045E1A19E542A900BC6665 /* YBYContainerController.h */,
+				58045E1B19E542A900BC6665 /* YBYContainerController.m */,
+				58045E0B19E517CD00BC6665 /* YBYOrderListTableViewController.h */,
+				58045E0C19E517CD00BC6665 /* YBYOrderListTableViewController.m */,
+				58045E1419E530A800BC6665 /* YBYGoldTableViewController.h */,
+				58045E1519E530A800BC6665 /* YBYGoldTableViewController.m */,
+				58045E1719E540B700BC6665 /* YBYSearchOrderTableViewController.h */,
+				58045E1819E540B700BC6665 /* YBYSearchOrderTableViewController.m */,
+			);
+			path = order;
+			sourceTree = "<group>";
+		};
 		58607D6619D5AEFF00AEE630 /* common */ = {
 			isa = PBXGroup;
 			children = (
@@ -690,13 +743,6 @@
 			path = login;
 			sourceTree = "<group>";
 		};
-		58607D6819D5AF0B00AEE630 /* order */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = order;
-			sourceTree = "<group>";
-		};
 		587CFEDE199F03DE005DB627 /* StrikeThroughLabel */ = {
 			isa = PBXGroup;
 			children = (
@@ -717,6 +763,15 @@
 				58849DA719D700E80004F77C /* GoodsApi.m */,
 			);
 			path = Api;
+			sourceTree = "<group>";
+		};
+		58890EBD19E28FCC001314E6 /* user */ = {
+			isa = PBXGroup;
+			children = (
+				58890EBE19E28FCC001314E6 /* PersonalDataViewController.h */,
+				58890EBF19E28FCC001314E6 /* PersonalDataViewController.m */,
+			);
+			path = user;
 			sourceTree = "<group>";
 		};
 		8E0293F7199C6A420058A010 /* Floder */ = {
@@ -967,10 +1022,17 @@
 		8EAD9921199DB5BE0084943C /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				58890EC319E2DA50001314E6 /* Face.xib */,
+				58890EC419E2DA50001314E6 /* FaceCell.h */,
+				58890EC519E2DA50001314E6 /* FaceCell.m */,
 				8EAD9922199DB6760084943C /* RDVGoodsTableViewCell.h */,
 				8EAD9923199DB6760084943C /* RDVGoodsTableViewCell.m */,
 				8EAD9927199DE4940084943C /* RDVRecommendGoodsTableViewCell.h */,
 				8EAD9928199DE4940084943C /* RDVRecommendGoodsTableViewCell.m */,
+				58045E0E19E5196500BC6665 /* YBYOrderTableViewCell.h */,
+				58045E0F19E5196500BC6665 /* YBYOrderTableViewCell.m */,
+				58045E1119E5306100BC6665 /* YBYGoldTableViewCell.h */,
+				58045E1219E5306100BC6665 /* YBYGoldTableViewCell.m */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -1012,6 +1074,10 @@
 		B435F53D1739811F00297C82 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				58890EBB19E275CF001314E6 /* card_arrows.png */,
+				58890EB719E26DCE001314E6 /* defaultavator.png */,
+				58890EB819E26DCE001314E6 /* defaultavator@2x.png */,
+				58890EB519E25A27001314E6 /* mybackground.jpg */,
 				8E82004C19AD7B7400181741 /* blackArrow.png */,
 				8E82004D19AD7B7400181741 /* blackArrow@2x.png */,
 				8E82004E19AD7B7400181741 /* blueArrow.png */,
@@ -1119,8 +1185,9 @@
 		B4616C0B1722995D00863892 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				58045E0A19E517CD00BC6665 /* order */,
+				58890EBD19E28FCC001314E6 /* user */,
 				58607D6719D5AF0B00AEE630 /* login */,
-				58607D6819D5AF0B00AEE630 /* order */,
 				8E02958C199C6B3E0058A010 /* SubCateViewController.h */,
 				8E02958D199C6B3E0058A010 /* SubCateViewController.m */,
 				8E02958E199C6B3E0058A010 /* SubCateViewController.xib */,
@@ -1141,6 +1208,8 @@
 		B4616C0D1722996200863892 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				58AACE9619E38CAC001E0397 /* setting.plist */,
+				58890EC819E2E07E001314E6 /* personalData.plist */,
 				8E029589199C6B010058A010 /* Category.plist */,
 				B4616BF5172298FE00863892 /* Default-568h@2x.png */,
 				B4616BF6172298FE00863892 /* Default.png */,
@@ -1259,6 +1328,7 @@
 				8E029583199C6ACC0058A010 /* tmall_icon_cat_outing_8.png in Resources */,
 				8E0294F4199C6ACC0058A010 /* jewelry_zhubao.png in Resources */,
 				8E0294C8199C6ACC0058A010 /* bag12_L.png in Resources */,
+				58890EBC19E275CF001314E6 /* card_arrows.png in Resources */,
 				8E029520199C6ACC0058A010 /* tmall_icon_cat_car_3.png in Resources */,
 				8E0294E9199C6ACC0058A010 /* home9_jujia.png in Resources */,
 				8E02951C199C6ACC0058A010 /* tmall_icon_cat_car_10.png in Resources */,
@@ -1291,6 +1361,7 @@
 				8E82005819AD7B7400181741 /* grayArrow.png in Resources */,
 				8E02955E199C6ACC0058A010 /* tmall_icon_cat_furniture_1.png in Resources */,
 				8E0294EF199C6ACC0058A010 /* jewelry_ring.png in Resources */,
+				58890EBA19E26DCE001314E6 /* defaultavator@2x.png in Resources */,
 				8E0294EA199C6ACC0058A010 /* jewelry_diamond.png in Resources */,
 				8E0294DB199C6ACC0058A010 /* food3_meet.png in Resources */,
 				8E029541199C6ACC0058A010 /* tmall_icon_cat_electrical_1.png in Resources */,
@@ -1339,6 +1410,7 @@
 				58EDEDFF19BA03790062CA79 /* Icon-Small.png in Resources */,
 				8E029558199C6ACC0058A010 /* tmall_icon_cat_food_12.png in Resources */,
 				5896B38D199E45F900C7C325 /* recommend_demo_pic.jpg in Resources */,
+				58890EB919E26DCE001314E6 /* defaultavator.png in Resources */,
 				8E029555199C6ACC0058A010 /* tmall_icon_cat_food@2x.png in Resources */,
 				8E029545199C6ACC0058A010 /* tmall_icon_cat_electrical_5.png in Resources */,
 				8E029509199C6ACC0058A010 /* tmall_icon_cat_baby_2.png in Resources */,
@@ -1380,6 +1452,7 @@
 				8E029588199C6ACC0058A010 /* wenhua9_gexing.png in Resources */,
 				8E0294D8199C6ACC0058A010 /* Default-568h@2x.png in Resources */,
 				8E02957E199C6ACC0058A010 /* tmall_icon_cat_outing_3.png in Resources */,
+				58890EC919E2E07E001314E6 /* personalData.plist in Resources */,
 				8E0294D5199C6ACC0058A010 /* cosmetic7_mianbu.png in Resources */,
 				8E029587199C6ACC0058A010 /* wenhua8_flower.png in Resources */,
 				8E0294F8199C6ACC0058A010 /* jiaju12_qiang.png in Resources */,
@@ -1433,6 +1506,8 @@
 				8E0294F3199C6ACC0058A010 /* jewelry_xianglian.png in Resources */,
 				8E02953C199C6ACC0058A010 /* tmall_icon_cat_digital_7.png in Resources */,
 				8E029581199C6ACC0058A010 /* tmall_icon_cat_outing_6.png in Resources */,
+				58AACE9719E38CAC001E0397 /* setting.plist in Resources */,
+				58890EB619E25A27001314E6 /* mybackground.jpg in Resources */,
 				8E029518199C6ACC0058A010 /* tmall_icon_cat_bag_6.png in Resources */,
 				8E0294FA199C6ACC0058A010 /* navigationbar_bg.png in Resources */,
 				8E029564199C6ACC0058A010 /* tmall_icon_cat_furniture_6.png in Resources */,
@@ -1464,6 +1539,7 @@
 				8E02955D199C6ACC0058A010 /* tmall_icon_cat_furniture@2x.png in Resources */,
 				8E029539199C6ACC0058A010 /* tmall_icon_cat_digital_4.png in Resources */,
 				8E029562199C6ACC0058A010 /* tmall_icon_cat_furniture_4.png in Resources */,
+				58890EC619E2DA50001314E6 /* Face.xib in Resources */,
 				8E029579199C6ACC0058A010 /* tmall_icon_cat_outing_1.png in Resources */,
 				B44008F4180B185E00D8CB89 /* third_normal.png in Resources */,
 				8E029547199C6ACC0058A010 /* tmall_icon_cat_fcloth@2x.png in Resources */,
@@ -1513,8 +1589,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E82006619ADD50600181741 /* RDVTabBarItem.m in Sources */,
+				58045E1019E5196500BC6665 /* YBYOrderTableViewCell.m in Sources */,
 				8E82005C19ADCFD200181741 /* YiBeiYan-Prefix.pch in Sources */,
 				58607D6E19D5B14700AEE630 /* YBYLoginViewController.m in Sources */,
+				58045E0D19E517CD00BC6665 /* YBYOrderListTableViewController.m in Sources */,
 				8E0293C9199C54A50058A010 /* LICENSE in Sources */,
 				58849D9219D6B3640004F77C /* MBProgressShow.m in Sources */,
 				8E0293CA199C54A50058A010 /* README.md in Sources */,
@@ -1524,14 +1602,17 @@
 				8E0293CD199C54A50058A010 /* iPhone.png in Sources */,
 				8E0293CE199C54A50058A010 /* iPhone-small.png in Sources */,
 				8E0293D2199C54A50058A010 /* ILBarButtonItem.h in Sources */,
+				58890EC719E2DA50001314E6 /* FaceCell.m in Sources */,
 				8E0293FE199C6A420058A010 /* FolderCoverView.m in Sources */,
 				8EC4FC1119B5ACBD000373E0 /* MLNavigationController.m in Sources */,
 				8E0293D3199C54A50058A010 /* RDVAppDelegate.h in Sources */,
 				8E0293D6199C54A50058A010 /* RDVFirstViewController.h in Sources */,
+				58890EC019E28FCC001314E6 /* PersonalDataViewController.m in Sources */,
 				8E0293D7199C54A50058A010 /* RDVSecondViewController.h in Sources */,
 				8E0293D8199C54A50058A010 /* RDVThirdViewController.h in Sources */,
 				8E02958F199C6B3E0058A010 /* SubCateViewController.m in Sources */,
 				8E0293D9199C54A50058A010 /* RDVFourViewController.h in Sources */,
+				58045E1C19E542A900BC6665 /* YBYContainerController.m in Sources */,
 				8E0293DA199C54A50058A010 /* first_normal.png in Sources */,
 				8E82006519ADD50600181741 /* RDVTabBarController.m in Sources */,
 				8E0293DB199C54A50058A010 /* first_normal@2x.png in Sources */,
@@ -1548,9 +1629,11 @@
 				8E0293E3199C54A60058A010 /* second_normal@2x.png in Sources */,
 				8E0293E4199C54A60058A010 /* second_selected.png in Sources */,
 				8E82004B19AD725800181741 /* FootLoadingView.m in Sources */,
+				58045E1619E530A800BC6665 /* YBYGoldTableViewController.m in Sources */,
 				8E82006419ADD50600181741 /* RDVTabBar.m in Sources */,
 				8E0293E5199C54A60058A010 /* second_selected@2x.png in Sources */,
 				8E0293E6199C54A60058A010 /* tabbar_normal_background.png in Sources */,
+				58045E1319E5306100BC6665 /* YBYGoldTableViewCell.m in Sources */,
 				587CFEE4199F0447005DB627 /* StrikeThroughLabel.m in Sources */,
 				8E0293E7199C54A60058A010 /* tabbar_normal_background@2x.png in Sources */,
 				8E0293E8199C54A60058A010 /* tabbar_selected_background.png in Sources */,
@@ -1578,6 +1661,7 @@
 				8E8BA2A419A34076005CA9B2 /* TestAnimationViewController.m in Sources */,
 				58849DA519D6C5DD0004F77C /* AFHTTPSessionManager+UploadImage.m in Sources */,
 				B465733A1725A23D00319236 /* RDVFirstViewController.m in Sources */,
+				58045E1919E540B700BC6665 /* YBYSearchOrderTableViewController.m in Sources */,
 				8EFD5F6A199B736900AC2017 /* RDVFourViewController.m in Sources */,
 				8EAD9929199DE4940084943C /* RDVRecommendGoodsTableViewCell.m in Sources */,
 				B465733D1725A24700319236 /* RDVSecondViewController.m in Sources */,

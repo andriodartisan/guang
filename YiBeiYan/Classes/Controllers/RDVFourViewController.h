@@ -10,6 +10,6 @@
 
 @interface RDVFourViewController : UITableViewController
 
-@property(strong,nonatomic)NSArray *myArr;
+@property(strong,nonatomic)NSMutableArray *myArr;
 
 @end

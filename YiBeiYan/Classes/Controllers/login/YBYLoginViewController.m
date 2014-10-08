@@ -168,17 +168,20 @@
         [LoginApi loginWithParameters:parameters withFinishBlock:^(id JSON, NSError *error) {
             if (!error) {
                 NSString *code = [NSString stringWithFormat:@"%@",[JSON valueForKey:@"code"]];
+                NSLog(@"login %@",JSON);
                 if ([code isEqualToString:@"0"]) {
-                    NSDictionary *user = [JSON valueForKeyPath:@"user"];
-                    [[NSUserDefaults standardUserDefaults] setValue:[user valueForKey:@"userid"] forKey:USER_DEFAULT_KEY_USERID];
+                    NSDictionary *user = [JSON valueForKeyPath:@"data"];
+                    [[NSUserDefaults standardUserDefaults] setValue:[user valueForKey:@"uid"] forKey:USER_DEFAULT_KEY_USERID];
                     [[NSUserDefaults standardUserDefaults] setValue:[user valueForKey:@"username"] forKey:USER_DEFAULT_KEY_USERNAME];
-                    //                        [[NSUserDefaults standardUserDefaults] setValue:userphone forKey:USER_DEFAULT_KEY_USERPHONE];
-                    //                        [[NSUserDefaults standardUserDefaults] setValue:[user valueForKey:@"avatar"] forKey:USER_DEFAULT_KEY_USERAVATAR];
-                    //                        [[NSUserDefaults standardUserDefaults] setValue:[user valueForKey:@"background"] forKey:USER_DEFAULT_KEY_USERBACKGROUND];
-                    //                        [[NSUserDefaults standardUserDefaults] setValue:[JSON valueForKey:@"accesstoken"] forKey:USER_DEFAULT_KEY_ACCESSTOKEN];
-                    //                        [[NSUserDefaults standardUserDefaults] setValue:[user valueForKey:@"sex"] forKey:USER_DEFAULT_KEY_USERSEX];
-                    //                        [[NSUserDefaults standardUserDefaults] setValue:[[user valueForKey:@"location"] description] forKey:USER_DEFAULT_KEY_USERLOCNAMES];
-                    //                        [[NSUserDefaults standardUserDefaults] setValue:[user valueForKey:@"position"] forKey:USER_DEFAULT_KEY_USERPOSITION];
+                    [[NSUserDefaults standardUserDefaults] setValue:[user valueForKey:@"alipay"] forKey:USER_DEFAULT_KEY_USERALIPAY];
+                    [[NSUserDefaults standardUserDefaults] setValue:[user valueForKey:@"avatar"] forKey:USER_DEFAULT_KEY_USERAVATAR];
+                    [[NSUserDefaults standardUserDefaults] setValue:[user valueForKey:@"email"] forKey:USER_DEFAULT_KEY_USEREMAIL];
+                    [[NSUserDefaults standardUserDefaults] setValue:[user valueForKey:@"income"] forKey:USER_DEFAULT_KEY_USERINCOME];
+                    [[NSUserDefaults standardUserDefaults] setValue:[user valueForKey:@"jinbi"] forKey:USER_DEFAULT_KEY_USERJINBI];
+                    [[NSUserDefaults standardUserDefaults] setValue:[user valueForKey:@"sex"] forKey:USER_DEFAULT_KEY_USERSEX];
+                    [[NSUserDefaults standardUserDefaults] setValue:[user valueForKey:@"status"] forKey:USER_DEFAULT_KEY_USERSTATUS];
+                    [[NSUserDefaults standardUserDefaults] setValue:[JSON valueForKey:@"accesstoken"] forKey:USER_DEFAULT_KEY_ACCESSTOKEN];
+                    [self.navigationController popToRootViewControllerAnimated:YES];
                 }else{
                     [[MBProgressShow shareInstance] showHUDModeText:[JSON valueForKey:@"msg"]];
                 }

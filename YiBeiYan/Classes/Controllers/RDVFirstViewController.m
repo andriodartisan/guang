@@ -28,26 +28,64 @@
 
 #import "RDVGoodsTableViewCell.h"
 #import "SubCateViewController.h"
+#import "YBYImportFile.h"
+#import "GoodsApi.h"
 
 @interface RDVFirstViewController ()
 
 @property (strong,nonatomic) FootLoadingView *footLoadingView;
 @property (strong , nonatomic) NSArray *subClass;
 @property (nonatomic) int num;
+@property (strong,nonatomic) NSMutableArray *goods;
 
 @end
 
 @implementation RDVFirstViewController
 @synthesize subClass = _subClass;
 @synthesize footLoadingView = _footLoadingView;
+@synthesize goods = _goods;
 
 -(NSArray *)cates{
     if (_cates == nil){
-        NSURL *url = [[NSBundle mainBundle] URLForResource:@"Category" withExtension:@"plist"];
-        _cates = [NSArray arrayWithContentsOfURL:url];
+        NSMutableDictionary *parameters = [[NSMutableDictionary alloc] init];
+        [GoodsApi typesWithParameters:parameters withFinishBlock:^(id JSON, NSError *error) {
+            if (!error) {
+                NSString *code = [NSString stringWithFormat:@"%@",[JSON valueForKey:@"code"]];
+                if ([code isEqualToString:@"0"]) {
+                    NSLog(@"types ,,,,%@",JSON);
+                    _cates = [JSON valueForKeyPath:@"data"];
+                }else{
+                    [[MBProgressShow shareInstance] showHUDModeText:[JSON valueForKey:@"msg"]];
+                }
+            }else{
+                [[MBProgressShow shareInstance] showHUDModeText:@"网络异常"];
+            }
+        }];
+//        NSURL *url = [[NSBundle mainBundle] URLForResource:@"Category" withExtension:@"plist"];
+//        _cates = [NSArray arrayWithContentsOfURL:url];
     }
     return _cates;
 }
+
+//-(NSMutableArray *)goods{
+//    if (_goods == nil) {
+//        NSMutableDictionary *parameters = [[NSMutableDictionary alloc] init];
+//        [GoodsApi listsWithParameters:parameters withFinishBlock:^(id JSON, NSError *error) {
+//            if (!error) {
+//                NSString *code = [NSString stringWithFormat:@"%@",[JSON valueForKey:@"code"]];
+//                if ([code isEqualToString:@"0"]) {
+//                    NSLog(@"types ,,,,%@",JSON);
+//                    _goods = [JSON valueForKeyPath:@"data"];
+//                }else{
+//                    [[MBProgressShow shareInstance] showHUDModeText:[JSON valueForKey:@"msg"]];
+//                }
+//            }else{
+//                [[MBProgressShow shareInstance] showHUDModeText:@"网络异常"];
+//            }
+//        }];
+//    }
+//}
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -110,6 +148,25 @@
     
     self.navigationItem.rightBarButtonItem = rightBtn;
     
+    self.goods = [[NSMutableArray alloc] init];
+    NSMutableDictionary *parameters = [[NSMutableDictionary alloc] init];
+    [parameters setValue:@"0" forKey:@"type"];
+    [parameters setValue:@"0" forKey:@"page"];
+    [parameters setValue:@"20" forKey:@"count"];
+    [GoodsApi listsWithParameters:parameters withFinishBlock:^(id JSON, NSError *error) {
+        if (!error) {
+            NSString *code = [NSString stringWithFormat:@"%@",[JSON valueForKey:@"code"]];
+            if ([code isEqualToString:@"0"]) {
+                NSLog(@"goods ,,,,%@",JSON);
+                _goods = [JSON valueForKeyPath:@"data"];
+                [self.tableView reloadData];
+            }else{
+                [[MBProgressShow shareInstance] showHUDModeText:[JSON valueForKey:@"msg"]];
+            }
+        }else{
+            [[MBProgressShow shareInstance] showHUDModeText:@"网络异常"];
+        }
+    }];
     NSDictionary *cate = [self.cates objectAtIndex:1]; //测试用
     _subClass = [cate objectForKey:@"subClass"];
     
@@ -279,7 +336,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     if (section == 0) {
-        return self.num;
+        return 10;
     }else{
         return 1;
     }

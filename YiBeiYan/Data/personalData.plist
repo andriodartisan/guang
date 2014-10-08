@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<array>
+		<dict>
+			<key>title</key>
+			<string>头像</string>
+			<key>detailTitle</key>
+			<string></string>
+			<key>message</key>
+			<string>选择图片-设置头像</string>
+			<key>image</key>
+			<string>1.png</string>
+			<key>style</key>
+			<string>image</string>
+		</dict>
+	</array>
+	<array>
+		<dict>
+			<key>title</key>
+			<string>用户名</string>
+			<key>detailTitle</key>
+			<string>用户名</string>
+			<key>message</key>
+			<string>修改用户名</string>
+			<key>placeholder</key>
+			<string>您的用户名</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>性别</string>
+			<key>detailTitle</key>
+			<string>男</string>
+			<key>message</key>
+			<string>选择性别</string>
+			<key>style</key>
+			<string>sex</string>
+			<key>placeholder</key>
+			<string>男</string>
+		</dict>
+        <dict>
+			<key>title</key>
+			<string>支付宝账号</string>
+			<key>detailTitle</key>
+			<string>男</string>
+			<key>message</key>
+			<string>添加支付宝账号</string>
+			<key>placeholder</key>
+			<string>您的支付宝账号</string>
+		</dict>
+	</array>
+</array>
+</plist>

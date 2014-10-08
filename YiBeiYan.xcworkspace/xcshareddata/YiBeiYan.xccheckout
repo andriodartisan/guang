@@ -5,36 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>32E3DEEF-9E28-497F-8EE3-C7E8DFFBEA60</string>
+	<string>D397FC11-9086-4088-9398-9B59F42798A1</string>
 	<key>IDESourceControlProjectName</key>
 	<string>YiBeiYan</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>3143E6E9-5FA5-4E84-AACF-F6ABBE2FD45D</key>
-		<string>http://git.m2lan.com/guang/yibeiyan.git</string>
+		<key>FD2BF21C-48B2-4C2A-B871-60E23F44A679</key>
+		<string>https://github.com/andriodartisan/guang.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>YiBeiYan.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>3143E6E9-5FA5-4E84-AACF-F6ABBE2FD45D</key>
+		<key>FD2BF21C-48B2-4C2A-B871-60E23F44A679</key>
 		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>http://git.m2lan.com/guang/yibeiyan.git</string>
+	<string>https://github.com/andriodartisan/guang.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>3143E6E9-5FA5-4E84-AACF-F6ABBE2FD45D</string>
+	<string>FD2BF21C-48B2-4C2A-B871-60E23F44A679</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>3143E6E9-5FA5-4E84-AACF-F6ABBE2FD45D</string>
+			<string>FD2BF21C-48B2-4C2A-B871-60E23F44A679</string>
 			<key>IDESourceControlWCCName</key>
-			<string>yibeiyan</string>
+			<string>YiBeiYan</string>
 		</dict>
 	</array>
 </dict>
